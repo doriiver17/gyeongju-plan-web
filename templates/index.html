@@ -1,5 +1,5 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>수성구청 경주 현장체험 계획서 만들기</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"></head><body><main>
-<header><p>수성구청 · 경주 조별 현장체험</p><h1>현장체험 계획서 만들기</h1><p>조별 내용을 작성하고 PDF로 저장해주세요.</p></header>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>현장체험계획서 작성하기</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"></head><body><main>
+<header><p>수성구청 동료들과 함께 떠나는 힐링원정대</p><h1>현장체험계획서 작성하기</h1><p>조별 내용을 작성하고 PDF로 저장해주세요.</p></header>
 <aside id="kakao" hidden>카카오톡 내부 브라우저에서는 PDF 저장이 제한될 수 있습니다. 주소를 복사해 Chrome 또는 Safari에서 열어주세요. <button type="button" id="copy-url">주소 복사</button><span id="copy-result" role="status"></span></aside>
 <form id="plan-form" action="/generate" method="post">
 <section><h2>01 조 정보</h2><div class="grid"><label>조 번호<input name="group_no" type="number" min="1" max="99" required></label><label>조 이름<input name="team_name" maxlength="20" required></label></div><label>조원 이름<input name="members" maxlength="100" required><small>최대 8명, 이름 사이에 쉼표를 넣어주세요.</small></label>
